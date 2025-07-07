@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: noc-chatbot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: streamlit run application.py --server.port 10000 --server.enableCORS false
